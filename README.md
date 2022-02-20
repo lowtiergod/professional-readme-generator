@@ -4,7 +4,7 @@
 
 ## Description
 
-This project simplifies the lives of developers by creating a generator that generates an easier and faster README.md.
+This project generates an easier and faster README.md.
 
 ## Table of Contents
 
@@ -18,12 +18,12 @@ This project simplifies the lives of developers by creating a generator that gen
 
 ## Installation
 
-The project only uses Node.js with npm inquirer, therefore, to use this application you will need to install it in the terminal. After the installation is done, proceed to see the Usage instructions.
+The project uses Node.js with npm inquirer. To use this application you will need to install it in the terminal. After the installation is completed, please view the usage section.
 <a name="usage"></a>
 
 ## Usage
 
-The usage is easy, as soon as you enter "node index.js" you will see the prompts of multiple questions to fill out. The answers for those questions will be used in the README.md generator.
+After you enter 'node index.js' in the terminal, prompts of multiple questions to fill out will appear. The answers for those questions will be used in the README.md generator.
 <a name="license"></a>
 
 ## License
@@ -36,7 +36,7 @@ This project is covered under the following license:
 
 ## Contributing
 
-I am currently accepting contributors for other projects.
+Please reach out to me for contributions and collaborations
 <a name="tests"></a>
 
 ## Questions
