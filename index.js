@@ -1,3 +1,8 @@
+const inquirer = require("inquirer");
+const markdownGen = require("./utils/markdown.js");
+const writeToFile = require("./utils/readme.js");
+
+
 const questions = [
   {
     type: "input",
@@ -121,3 +126,22 @@ const questions = [
 const promptQuestions = () => {
   return inquirer.prompt(questions);
 };
+
+
+function init() {
+  promptQuestions(questions)
+    .then((answers) => {
+      return markdownGen(answers);
+    })
+    .then((readmeMarkdown) => {
+      return writeToFile(readmeMarkdown);
+    })
+    .then((writeFileResponse) => {
+      console.log(writeFileResponse);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+init();
