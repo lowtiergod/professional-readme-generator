@@ -117,3 +117,7 @@ const questions = [
     },
   },
 ];
+
+const promptQuestions = () => {
+  return inquirer.prompt(questions);
+};
